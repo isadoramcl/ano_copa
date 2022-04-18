@@ -1,0 +1,30 @@
+<meta charset = "UTF-8">
+
+<h3> Quantas copas do Mundo até o ano escolhido </h3>
+
+<script>
+	
+function pulaLinha () {
+	document.write ("<br>");
+	document.write ("<br>");
+}
+
+function mostra (frase) {
+	document.write (frase);
+	pulaLinha ();
+}
+
+//calcular os anos que tiveram copa a partir de 1830 até n
+
+var anoCopa = 1930;
+var anoEntrada = parseInt (prompt ("Insira o ano que você quer saber."));
+
+while (anoCopa < anoEntrada) {
+	anoCopa = anoCopa + 4;
+
+	mostra ("Teve copa em " + anoCopa);	
+}
+
+mostra ("Fim.")
+
+</script>
